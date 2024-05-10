@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Nara-Games/static/css/main.42373dac.css",
-    "main.js": "/Nara-Games/static/js/main.a5f33c9b.js",
+    "main.js": "/Nara-Games/static/js/main.cd73175c.js",
     "reactPlayerPreview.js": "/Nara-Games/static/js/reactPlayerPreview.4e541e7b.chunk.js",
     "index.html": "/Nara-Games/index.html",
     "main.42373dac.css.map": "/Nara-Games/static/css/main.42373dac.css.map",
-    "main.a5f33c9b.js.map": "/Nara-Games/static/js/main.a5f33c9b.js.map",
+    "main.cd73175c.js.map": "/Nara-Games/static/js/main.cd73175c.js.map",
     "reactPlayerPreview.4e541e7b.chunk.js.map": "/Nara-Games/static/js/reactPlayerPreview.4e541e7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.42373dac.css",
-    "static/js/main.a5f33c9b.js"
+    "static/js/main.cd73175c.js"
   ]
 }
