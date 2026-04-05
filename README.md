@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/29710896-2b12-4d11-9ec1-d51461aab0f3" /># 🎮 Nara Games
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive online game discovery platform that lets users browse and explore a large catalog of games from around the world.
 
-## Available Scripts
+**[→ Live Demo](https://nara-games.netlify.app/)**
 
-In the project directory, you can run:
+![screenshot](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2c846e27-f458-49f9-aacc-13b40eb46717" />
+)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What it does
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Fetches and displays a large catalog of games via an external games API
+- Users can browse, search, and explore game details
+- Fully responsive across mobile and desktop
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How it works
 
-### `npm run build`
+The app relies on an external games API that has a usage limit per key. To keep the app live without manual intervention, I built a small Node.js backend hosted on Railway that automatically rotates to a fresh API key before the limit is hit — then pushes the new key back to the frontend config.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This keeps the app self-sustaining without any manual key management.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> ⚠️ **Note:** The backend runs on Railway's free tier, so the first request after a period of inactivity may take ~30 seconds while the server wakes up. Subsequent requests are fast.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Layer | Technology |
+|---|---|
+| Frontend | React.js |
+| Backend | Node.js / Express |
+| Frontend Hosting | Netlify |
+| Backend Hosting | Railway |
+| Data | External Games API |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Running locally
+```bash
+git clone https://github.com/YousefMohamed117/Nara-Games.git
+cd Nara-Games
+npm install
+# Add your API key to .env
+REACT_APP_API_KEY=your_key_here
+npm start
+```
